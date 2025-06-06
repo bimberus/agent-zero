@@ -106,7 +106,9 @@ docker run -p 50001:80 frdel/agent-zero-run
 # Visit http://localhost:50001 to start
 ```
 
-Alternatively, with **docker-ce** and Compose:
+Alternatively, with the Docker Compose plugin:
+
+This compose file requires no `version:` declaration.
 
 ```bash
 docker compose up -d
