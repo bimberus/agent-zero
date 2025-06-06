@@ -106,6 +106,17 @@ docker run -p 50001:80 frdel/agent-zero-run
 # Visit http://localhost:50001 to start
 ```
 
+Alternatively, with the Docker Compose plugin:
+
+This compose file requires no `version:` declaration.
+
+```bash
+docker compose up -d
+```
+
+The accompanying `docker-compose.yml` maps `./data` to `/a0` for persistent
+storage and exposes ports `50001` for the Web UI and `55022` for RFC SSH.
+
 ## 🐳 Fully Dockerized, with Speech-to-Text and TTS
 
 ![Settings](docs/res/settings-page-ui.png)

@@ -1,0 +1,10 @@
+services:
+  agent-zero:
+    image: frdel/agent-zero-run
+    container_name: agent-zero
+    ports:
+      - "50001:80"
+      - "55022:22"
+    volumes:
+      - ./data:/a0
+
